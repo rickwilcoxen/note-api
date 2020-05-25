@@ -3,9 +3,9 @@ class UsernotesController < OpenReadController
 
   # GET /usernotes
   def index
-    @usernotes = Usernote.all
+    @usernote = current_user.usernotes.all
 
-    render json: @usernotes
+    render json: @usernote
   end
 
   # GET /usernotes/1
@@ -42,7 +42,7 @@ class UsernotesController < OpenReadController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_usernote
-    @usernote = current_user.usernote.find(params[:id])
+    @usernote = current_user.usernotes.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
