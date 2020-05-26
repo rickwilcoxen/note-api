@@ -1,6 +1,11 @@
 # Note Application
 A mental health resource app that allows users to save information like doctor's phone numbers or med info in one place.
 
+## Download/Set up Instructions
+1. Fork and clone
+2. Run ```bunlde install``` to install dependencies
+3. run ```bin/rails start``` to start the server
+
 ## Important Links
 - [Other Repo](https://github.com/rickwilcoxen/note-client)
 - [Deployed API](https://rocky-basin-34781.herokuapp.com/)
@@ -23,6 +28,11 @@ To think that myself, at the time an art major in college, could have figured ou
 I hope to create a well functioning app that helps those with undiagnosed disabilities find the help they need, allowing for many different uses including listing resources, links for hotlines, and of course, taking notes.
 
 ![Plan](https://i.imgur.com/X2U8e3i.png)
+### Wireframes
+![wireframe](https://i.imgur.com/VmyaJoF.png)
+
+### ERD
+![ERD](https://i.imgur.com/Px3X7JG.png)
 
 ### User Stories
 
@@ -61,8 +71,7 @@ In later versions I would like to have the app contain far more useful informati
 
 ## Images
 
-### Wireframes
-![wireframe](https://i.imgur.com/VmyaJoF.png)
-
-### ERD
-![ERD](https://i.imgur.com/Px3X7JG.png)
+### Logged in
+![Logged in](https://i.imgur.com/db6P8Ug.png)
+### New User
+![New User](https://i.imgur.com/oAQKeW5.png)
