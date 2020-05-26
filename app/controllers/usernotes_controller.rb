@@ -3,12 +3,13 @@ class UsernotesController < OpenReadController
 
   # GET /usernotes
   def index
-    @usernote = current_user.usernotes.all
+    @usernotes = current_user.usernotes.all
 
-    render json: @usernote
+    render json: @usernotes
   end
 
   # GET /usernotes/1
+  # Usernote.find(params[:id])
   def show
     render json: @usernote
   end
@@ -38,8 +39,6 @@ class UsernotesController < OpenReadController
     @usernote.destroy
   end
 
-  private
-
   # Use callbacks to share common setup or constraints between actions.
   def set_usernote
     @usernote = current_user.usernotes.find(params[:id])
@@ -50,4 +49,6 @@ class UsernotesController < OpenReadController
   def usernote_params
     params.require(:usernote).permit(:title, :contents, :tag, :user_id)
   end
+
+  private :set_usernote, :usernote_params
 end
